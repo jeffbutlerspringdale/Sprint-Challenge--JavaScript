@@ -32,7 +32,7 @@ class CuboidMaker {
   */
   
   CuboidMaker.prototype.surfaceArea = function(length,width,height){
-    return 2 * (this.length * this.width * this.length * this.height * this.width * this.height);
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }
   
   /* == Step 4: Create a new object that uses CuboidMaker ==
@@ -53,7 +53,7 @@ class CuboidMaker {
   
   
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-console.log(cuboid.volume()); // 100
-console.log(cuboid.surfaceArea()); // 130 >>>used actual calc and it comes up to the same area as this function
+// console.log(cuboid.volume()); // 100
+// console.log(cuboid.surfaceArea()); // 130 >>>used actual calc and it comes up to the same area as this function
 
 // Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area.
